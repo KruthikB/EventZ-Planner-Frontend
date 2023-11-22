@@ -1,0 +1,21 @@
+/* Navbar.css */
+.Navvbar{
+    background-color: white;
+}
+.navbar-brand span {
+    font-size: 1.5rem; /* You can adjust the size as needed */
+  }
+.navv{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link {
+    color: black;
+}
+
+#navbarNav{
+    width: fit-content;
+    justify-content: right;
+}
+  /* Additional styles for your navbar */
+  

@@ -1,0 +1,129 @@
+/* Dashboard.css */
+.dashboard .main-section {
+    /* The image is set as a background image for the div */
+    background: url('../../../public/image_1.png') no-repeat center center;
+ /* This will make sure the image covers the entire div */
+    height: 80vh;
+    width: 100%; /* Set the height of the section to full viewport height */
+    display: flex;
+    align-items: center; /* Aligns children (button) vertically */
+    justify-content: center; /* Centers children (button) horizontally */
+    margin-top:20px;
+  }
+  
+  .start-button{
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 20px; /* Font size for the button text */
+    color: #fff; /* Button text color */
+    background-color: #FF5F5F; /* Background color of the button */
+    font-weight: 500;
+    width: 200px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for button hover effect */
+  }
+  
+  .start-button:hover {
+    background-color: #ffffff; 
+    color: #FF5F5F;/* Darker shade on hover */
+  }
+  
+
+  .container{
+    text-align: center;
+    align-items: center;
+    background: none;
+  }
+
+  .container h1{
+    font-size: 96px;
+    text-shadow:3px 3px #fff;
+    
+  }
+#description{
+    color: white;
+    background: none;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .container h2{
+    font-size: 40px;
+    font-weight: 200;
+  }
+
+  #about{
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  #about h1{
+    font-size: 40px;
+  }
+
+
+.cards-container{
+    justify-content: space-between;
+    height: 300px;
+    margin-bottom: 100px;
+  }
+
+.cards{
+  border-radius: 500px;
+}
+
+.card-body{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 500px;
+}
+.card-title, h5{
+  background:none;
+  font-size: 20px;
+  font-weight: 800;
+  color: #FF5F5F;
+}
+.card-text{
+  background:none;
+  font-size: 18px;
+}
+
+.cards button{
+  background-color: #FF5F5F;
+  border: none;
+}
+
+.cards button:hover{
+  background-color: #ffffff;
+  color: #FF5F5F;
+  border: #FF5F5F;
+}
+.hide-indicators .carousel-indicators {
+  display: none;
+}
+
+.custom-arrow .carousel-control-prev,
+.custom-arrow .carousel-control-next {
+  top: 50% !important; /* Centers vertically */
+  transform: translateY(-50%) !important;
+  background-color: #FF5F5F !important;
+  background: none !important; /* Remove default background */
+}
+
+.custom-arrow .carousel-control-prev-icon {
+  left: 5px !important; /* Move to the desired position from the left side */
+}
+
+.custom-arrow .carousel-control-next-icon {
+  right: 5px !important; /* Move to the desired position from the right side */
+}
+
+a .carousel-control-prev{
+  width: 40px;
+}
