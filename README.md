@@ -81,7 +81,7 @@ EventZ Planner is a comprehensive event management website built using the MERN 
 
 ## Contributors
 
-- List the contributors and their contributions here.
+- Kruthik Ballari
 
 ## License
 
