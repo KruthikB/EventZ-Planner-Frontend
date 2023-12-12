@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# EventZ Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EventZ Planner is a comprehensive event management website built using the MERN (MongoDB, Express.js, React, Node.js) stack. It provides a user-friendly platform for event organizers and attendees to manage and participate in events. The system includes features such as user authentication, event CRUD operations, booking functionality, and ticket generation with QR code verification.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication and Authorization**: Secure registration and login system for users. Different roles (organizer, attendee) with appropriate permissions are implemented.
 
-### `npm start`
+- **Event Management**:
+  - Create, read, update, and delete (CRUD) operations for events.
+  - Add photos to events for a visually appealing experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Booking System**:
+  - Users can browse available events and book tickets for the ones they are interested in.
+  - Generate a unique ticket for each booking, including a QR code for easy verification.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Ticket Generation**: QR Code integration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+1. **Clone the Repository**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone https://github.com/KruthikB/EventZ-Planner-Frontend.git
+    cd EventZ-Planner-Frontend
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Setup Backend**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Install dependencies:
 
-### `npm run eject`
+        ```bash
+        git clone https://github.com/KruthikB/EventZ-Planner-Backend.git
+        cd EventZ-Planner-Backend
+        npm install
+        ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Configure MongoDB connection in `backend/config/default.json`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - Run the backend server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+        ```bash
+        npm start
+        ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Setup Frontend**:
 
-## Learn More
+    - Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        ```bash
+        cd frontend
+        npm install
+        ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - Run the frontend server:
 
-### Code Splitting
+        ```bash
+        npm start
+        ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Access the Application**:
 
-### Analyzing the Bundle Size
+    - Open your browser and go to `http://localhost:3000` to access the EventZ Planner application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Folder Structure
 
-### Making a Progressive Web App
+- **backend**: Contains server-side code.
+- **frontend**: Contains client-side code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Additional Notes
 
-### Advanced Configuration
+- Ensure that MongoDB is installed and running on your machine.
+- Customize the authentication and authorization logic based on your requirements.
+- Use a file storage service (e.g., AWS S3) for storing uploaded photos in a production environment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributors
 
-### Deployment
+- List the contributors and their contributions here.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Screenshots and Implementations
+
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/7585a043-3fca-4447-884c-099810fb61ff)
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/48432364-cb50-47db-a143-b17b203a4dd9)
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/5d193fbe-7d76-448d-aedf-1bb9ad0c8d2d)
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/d9e4580b-9cee-46df-9329-d11574c4b623)
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/34bda210-750c-4ffd-bf02-e23ddd538202)
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/8b9c9883-0799-4371-8f06-ee3f06e15110)
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/e1dc61a8-8e66-4b57-a77b-9c6d2c8c9bbe)
+![image](https://github.com/KruthikB/EventZ-Planner-Frontend/assets/112860541/5909f06f-fe0f-48d1-a253-f3278b0a0f37)
+
+
+
+
+
+
+
+
